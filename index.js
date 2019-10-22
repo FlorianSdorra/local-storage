@@ -21,12 +21,15 @@ updateList = item => {
     localStorage.setItem("todo", JSON.stringify(myItems));
 }
 
+myItems.forEach(el => {
+    addListItem(el)
+});
 
 
 
 input.onkeydown = e => {
     if (e.key === "Enter") {
         let text = input.value;
-        addListItem(text);
+        updateList(text);
     }
 };

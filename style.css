@@ -15,7 +15,6 @@ body {
 }
 
 p::before {
-    content: &#x2665;
-    margin: 5px;
-    color: red;
+    content: "\2604";
+    margin-right: 5px;
 }
